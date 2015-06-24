@@ -14,7 +14,7 @@
 	"author": "rektide de la faye",
 	"license": "X",
 	"dependencies": {
-		"knwl": "0.0.1",
+		"knwl.js": "^1.0.2",
 		"machine": "^3.0.0"
 	},
 	"devDependencies": {

@@ -1,11 +1,11 @@
-var knwl= require("knwl")
+var knwl= require("knwl.js")
 
 var registered= {}
 
 module.exports = function(name, example, description, plugin){
 	return {
 		friendlyName: "Get " + name,
-		description: "Get " + name+ " from strings",
+		description: "Get " + name + " from strings",
 		inputs: {
 			string: {
 				example: example,
@@ -22,10 +22,13 @@ module.exports = function(name, example, description, plugin){
 		defaultExit: "success",
 		exits: {
 			error: {
-				description: "No + " name + " found."
+				description: "No + " + name + " found.",
+				void: true
 			},
 			success: {
-				description: "All found " + name + "."
+				description: "All found " + name + ".",
+				example: {
+				}
 			}
 		},
 		fn: function(inputs, exits){
