@@ -1,0 +1,40 @@
+{
+	"name": "machinepack-knwl",
+	"version": "1.0.0",
+	"description": "Machinepack to parse with Knwl",
+	"scripts": {
+		"test": "false"
+	},
+	"keywords": [
+		"knwl",
+		"knwl.js",
+		"machines",
+		"machinepack"
+	],
+	"author": "rektide de la faye",
+	"license": "X",
+	"dependencies": {
+		"knwl": "0.0.1",
+		"machine": "^3.0.0"
+	},
+	"devDependencies": {
+	},
+	"machinepack": {
+		"friendlyName": "Knwl",
+		"machineDir": "machines/",
+		"machines": [
+			"getDates",
+			"getTimes",
+			"getPhones",
+			"getLinks",
+			"getEmails",
+			"getPlaces",
+			"getEnglish",
+			"getUnits"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rektide/machinepack-knwl.git"
+	}
+}
