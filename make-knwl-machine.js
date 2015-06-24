@@ -27,12 +27,11 @@ module.exports = function(name, example, description, plugin){
 			},
 			success: {
 				description: "All found " + name + ".",
-				example: {
-				}
+				example: []
 			}
 		},
 		fn: function(inputs, exits){
-			var parser= knwl(inputs.language)
+			var parser= new knwl(inputs.language)
 			if(plugin){
 				parser.register(name, plugin)
 			}
